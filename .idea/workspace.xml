@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57fe06c4-8740-4d1b-a8d1-7466a50252d2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/contracts/events.sol" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/contracts/inspector.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/inspector.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/ownable.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/ownable.sol" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="inspector.sol" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inspector.sol" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/inspector.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="95">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventLogs.sol" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/contracts/eventLogs.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -51,6 +60,7 @@
       <list>
         <option value="$PROJECT_DIR$/contracts/ownable.sol" />
         <option value="$PROJECT_DIR$/contracts/inspector.sol" />
+        <option value="$PROJECT_DIR$/contracts/eventLogs.sol" />
       </list>
     </option>
   </component>
@@ -137,12 +147,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532860911622</updated>
-      <workItem from="1532860913668" duration="390000" />
+      <workItem from="1532860913668" duration="1198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="390000" />
+    <option name="totallyTimeSpent" value="1198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
@@ -184,8 +194,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contracts/inspector.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="95">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/eventLogs.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
         </state>
       </provider>
     </entry>
