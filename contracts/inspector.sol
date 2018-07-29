@@ -2,31 +2,31 @@ pragma solidity ^0.4.23;
 
 contract inspector {
 
-    struct NumberStruct {
-        uint number;
-        bool isCurrent;
+    struct Events {
+        uint time;
+        uint date;
     }
 
-    NumberStruct[] nums;
+    Events[] events;   // [0]=NOR [1]=startSail [2]=dockAtDestination [3]=unloaded
 
     function Reference() private {
-        NumberStruct memory numberStruct;
-        nums.push(numberStruct);
+        Events memory eventStruct;
+        events.push(eventStruct);
     }
 
-    function setTwo() public {
+    function setNOR(uint _time, uint _date) public {
         Reference();
-        NumberStruct storage aNumberStruct = nums[0];
+        Events storage aevent = events[0];
         // these references are writing to nums[]
-        aNumberStruct.number = 2;
-        aNumberStruct.isCurrent = true;
+        aevent.time = _time;
+        aevent.date = _date;
     }
 
-    function getSlotZero() public
-    returns (uint number, bool isCurrent){
-        Reference();
-        // you get 2, true after setTwo() and 0, false before setTwo()
-        return (nums[0].number, nums[0].isCurrent);
-    }
+    // function getSlotZero() public
+    // returns (uint time, uint date){
+    //     Reference();
+    //     // you get 2, true after setTwo() and 0, false before setTwo()
+    //     return (events[0].time, events[0].date);
+    // }
 }
 
