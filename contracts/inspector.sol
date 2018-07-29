@@ -1,23 +1,32 @@
 pragma solidity ^0.4.23;
 
 contract inspector {
-    address public owner;
-    uint public last_completed_migration;
 
-    constructor() public {
-        owner = msg.sender;
+    struct NumberStruct {
+        uint number;
+        bool isCurrent;
     }
 
-    modifier restricted() {
-        if (msg.sender == owner) _;
+    NumberStruct[] nums;
+
+    function Reference() private {
+        NumberStruct memory numberStruct;
+        nums.push(numberStruct);
     }
 
-    function setCompleted(uint completed) public restricted {
-        last_completed_migration = completed;
+    function setTwo() public {
+        Reference();
+        NumberStruct storage aNumberStruct = nums[0];
+        // these references are writing to nums[]
+        aNumberStruct.number = 2;
+        aNumberStruct.isCurrent = true;
     }
 
-    function upgrade(address new_address) public restricted {
-        Migrations upgraded = Migrations(new_address);
-        upgraded.setCompleted(last_completed_migration);
+    function getSlotZero() public
+    returns (uint number, bool isCurrent){
+        Reference();
+        // you get 2, true after setTwo() and 0, false before setTwo()
+        return (nums[0].number, nums[0].isCurrent);
     }
 }
+
