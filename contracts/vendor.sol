@@ -2,11 +2,10 @@ pragma solidity ^0.4.23;
 
 contract vendor {
 
-    
     address shipmentId;
     string name;
     string description;
-    uint volume;
+    uint scheduledVolume;
     uint loadPrice;
 
     event LogShipment(
@@ -25,7 +24,7 @@ contract vendor {
         shipmentId = this;
         name = _name;
         description = _description;
-        volume = _volume;
+        scheduledVolume = _volume;
         loadPrice = _loadPrice;
         
         emit LogShipment(
@@ -37,11 +36,12 @@ contract vendor {
     }
 
     function getShipment() view public returns(
+        address,
         string,
         string,
         uint,
         uint) {
-        return(name, description, volume, loadPrice);
+        return(shipmentId, name, description, scheduledVolume, loadPrice);
     }
 
     struct Events {

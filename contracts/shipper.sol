@@ -2,14 +2,6 @@ pragma solidity ^0.4.23;
 
 contract shipper {
     
-    struct Shipment {
-        uint shipmentId;
-        string name;
-        string description;
-        uint volume;
-        uint loadPrice;
-    }
-    
     struct Events {
         uint time;
         uint date;
@@ -49,34 +41,6 @@ contract shipper {
     returns (uint time, uint date){
         Reference();
         return (events[1].time, events[1].date);
-    }
-
-    function setDockAtDestination(uint _time, uint _date) public {
-        Reference();
-        Events storage aevent = events[2];
-        // these references are writing to events[]
-        aevent.time = _time;
-        aevent.date = _date;
-    }
-
-    function getDockAtDestination() public
-    returns (uint time, uint date){
-        Reference();
-        return (events[2].time, events[2].date);
-    }
-
-    function setUnloaded(uint _time, uint _date) public {
-        Reference();
-        Events storage aevent = events[3];
-        // these references are writing to events[]
-        aevent.time = _time;
-        aevent.date = _date;
-    }
-
-    function getUnloaded() public
-    returns (uint time, uint date){
-        Reference();
-        return (events[3].time, events[3].date);
     }
 }
 

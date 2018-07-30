@@ -2,13 +2,7 @@ pragma solidity ^0.4.23;
 
 contract loadingPort {
     
-    struct Shipment {
-        uint shipmentId;
-        string name;
-        string description;
-        uint volume;
-        uint loadPrice;
-    }
+
     struct Events {
         uint time;
         uint date;
