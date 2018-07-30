@@ -7,7 +7,7 @@ contract eventLogs {
         uint date;
     }
 
-    Events[] events;   // [0]=NOR [1]=startSail [2]=dockAtDestination [3]=unloaded
+    Events[] events;   // [0]=NOR [1]=startSail [2]=dockAtDischargePort [3]=unloaded
 
     function Reference() private {
         Events memory eventStruct;
@@ -45,7 +45,7 @@ contract eventLogs {
         return (events[1].time, events[1].date);
     }
 
-    function setDockAtDestination(uint _time, uint _date) public {
+    function setDockAtDischargePort(uint _time, uint _date) public {
         Reference();
         Events storage aevent = events[2];
         // these references are writing to nums[]
@@ -53,7 +53,7 @@ contract eventLogs {
         aevent.date = _date;
     }
 
-    function getDockAtDestination() public
+    function getDockAtDischargePort() public
     returns (uint time, uint date){
         Reference();
         // you get 2, true after setTwo() and 0, false before setTwo()
