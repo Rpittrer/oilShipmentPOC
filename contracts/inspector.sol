@@ -1,6 +1,7 @@
 pragma solidity ^0.4.23;
 
 contract inspector {
+    
     string origin;
     string destination;
 
@@ -26,7 +27,20 @@ contract inspector {
     // Origin
     ////////////////////////////////////////////////////////
     
+    function addOrigin(string _origin) public {
+        origin = _origin;
+    }
+    function getOrigin() public view returns(string){
+        return origin;
+    }
     
+    function addDestination(string _destination) public {
+        destination = _destination;
+    }
+    function getDestination() public view returns(string){
+        return destination;
+    }
+
     function setOriginNOR(uint _time, uint _date) public {
         Reference();
         Events storage aevent = events[0];
