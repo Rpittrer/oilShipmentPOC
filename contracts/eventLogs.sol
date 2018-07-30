@@ -17,7 +17,7 @@ contract eventLogs {
     function setNOR(uint _time, uint _date) public {
         Reference();
         Events storage aevent = events[0];
-        // these references are writing to nums[]
+        // these references are writing to events[]
         aevent.time = _time;
         aevent.date = _date;
     }
@@ -25,7 +25,6 @@ contract eventLogs {
     function getNOR() public
     returns (uint time, uint date){
         Reference();
-        // you get 2, true after setTwo() and 0, false before setTwo()
         return (events[0].time, events[0].date);
     }
 
@@ -33,7 +32,7 @@ contract eventLogs {
     function setStartSail(uint _time, uint _date) public {
         Reference();
         Events storage aevent = events[1];
-        // these references are writing to nums[]
+        // these references are writing to events[]
         aevent.time = _time;
         aevent.date = _date;
     }
@@ -41,14 +40,13 @@ contract eventLogs {
     function getStartSail() public
     returns (uint time, uint date){
         Reference();
-        // you get 2, true after setTwo() and 0, false before setTwo()
         return (events[1].time, events[1].date);
     }
 
     function setDockAtDestination(uint _time, uint _date) public {
         Reference();
         Events storage aevent = events[2];
-        // these references are writing to nums[]
+        // these references are writing to events[]
         aevent.time = _time;
         aevent.date = _date;
     }
@@ -56,14 +54,13 @@ contract eventLogs {
     function getDockAtDestination() public
     returns (uint time, uint date){
         Reference();
-        // you get 2, true after setTwo() and 0, false before setTwo()
         return (events[2].time, events[2].date);
     }
 
     function setUnloaded(uint _time, uint _date) public {
         Reference();
         Events storage aevent = events[3];
-        // these references are writing to nums[]
+        // these references are writing to events[]
         aevent.time = _time;
         aevent.date = _date;
     }
@@ -71,7 +68,6 @@ contract eventLogs {
     function getUnloaded() public
     returns (uint time, uint date){
         Reference();
-        // you get 2, true after setTwo() and 0, false before setTwo()
         return (events[3].time, events[3].date);
     }
 }
