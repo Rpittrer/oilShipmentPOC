@@ -1,7 +1,15 @@
 pragma solidity ^0.4.23;
 
 contract shipper {
-
+    
+    struct Shipment {
+        uint shipmentId;
+        string name;
+        string description;
+        uint volume;
+        uint loadPrice;
+    }
+    
     struct Events {
         uint time;
         uint date;

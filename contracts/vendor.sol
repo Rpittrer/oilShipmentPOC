@@ -2,6 +2,49 @@ pragma solidity ^0.4.23;
 
 contract vendor {
 
+    struct Shipment {
+        address shipmentId;
+        string name;
+        string description;
+        uint volume;
+        uint loadPrice;
+    }
+    mapping(uint => Shipment) public shipments;
+    uint shipment_counter;
+
+    event LogShipment(
+        string name,
+        string description,
+        uint volume,
+        uint loadPrice
+    );
+
+    // function getAddress() public returns (address)  {
+    //     return msg.sender;
+    // }
+
+    function addShipment(
+        string _name,
+        string _description,
+        uint _volume,
+        uint _loadPrice
+    ) public {
+        shipment_counter = block.number;
+        shipments[shipment_counter] = Shipment(
+            this,
+            _name,
+            _description,
+            _volume,
+            _loadPrice
+        );
+
+        emit LogShipment(
+            _name,
+            _description,
+            _volume,
+            _loadPrice
+        );
+    }
     struct Events {
         uint time;
         uint date;
