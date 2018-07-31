@@ -49,9 +49,8 @@ contract inspector {
         aevent.date = _date;
     }
 
-    function getOriginNOR() public
+    function getOriginNOR() public view
     returns (uint time, uint date){
-        Reference();
         return (events[0].time, events[0].date);
     }
     
@@ -64,9 +63,8 @@ contract inspector {
         aevent.actualVolume = _actualVolume;
     }
 
-    function getOriginSail() public
+    function getOriginSail() public view
     returns (uint time, uint date, uint actualVolume){
-        Reference();
         return (events[1].time, events[1].date, events[1].actualVolume);
     }
    
@@ -84,9 +82,8 @@ contract inspector {
         aevent.date = _date;
     }
 
-    function getDestinationNOR() public
+    function getDestinationNOR() public view
     returns (uint time, uint date){
-        Reference();
         return (events[2].time, events[2].date);
     }
 
@@ -99,9 +96,8 @@ contract inspector {
         aevent.actualVolume = _actualVolume;
     }
 
-    function getDestinationSail() public
+    function getDestinationSail() public view
     returns (uint time, uint date, uint actualVolume){
-        Reference();
         return (events[3].time, events[3].date, events[3].actualVolume);
     }
 
