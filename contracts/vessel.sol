@@ -1,7 +1,7 @@
 pragma solidity ^0.4.23;
 
 contract vessel {
-    
+
     string origin;
     string destination;
 
@@ -11,12 +11,12 @@ contract vessel {
         uint actualVolume;
     }
 
-    Events[] events;   
+    Events[] events;
     //  [0]=setOriginNOR
     //  [1]=setOriginSail
     //  [2]=setDestinationNOR 
     //  [3]=setDestinationSail
-      
+
     function Reference() private {
         Events memory eventStruct;
         events.push(eventStruct);
@@ -26,18 +26,20 @@ contract vessel {
     ////////////////////////////////////////////////////////
     // Origin
     ////////////////////////////////////////////////////////
-    
+
     function addOrigin(string _origin) public {
         origin = _origin;
     }
-    function getOrigin() public view returns(string){
+
+    function getOrigin() public view returns (string){
         return origin;
     }
-    
+
     function addDestination(string _destination) public {
         destination = _destination;
     }
-    function getDestination() public view returns(string){
+
+    function getDestination() public view returns (string){
         return destination;
     }
 
@@ -53,7 +55,7 @@ contract vessel {
     returns (uint time, uint date){
         return (events[0].time, events[0].date);
     }
-    
+
     function setOriginSail(uint _time, uint _date, uint _actualVolume) public {
         Reference();
         Events storage aevent = events[1];
@@ -67,12 +69,12 @@ contract vessel {
     returns (uint time, uint date, uint actualVolume){
         return (events[1].time, events[1].date, events[1].actualVolume);
     }
-   
+
 
     ////////////////////////////////////////////////////////
     // Destination
     ////////////////////////////////////////////////////////
-    
+
 
     function setDestinationNOR(uint _time, uint _date) public {
         Reference();
