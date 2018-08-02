@@ -6,7 +6,6 @@ contract participant {
 
     struct Events {
         uint time;
-        uint date;
         uint actualVolume;
     }
 
@@ -20,7 +19,6 @@ contract participant {
         Events memory eventStruct;
         events.push(eventStruct);
     }
-
 
     ////////////////////////////////////////////////////////
     // Origin
@@ -42,31 +40,29 @@ contract participant {
         return destination;
     }
 
-    function setOriginNOR(uint _time, uint _date) public {
+    function setOriginNOR(uint _time) public {
         Reference();
         Events storage aevent = events[0];
         // these references are writing to events[]
         aevent.time = _time;
-        aevent.date = _date;
     }
 
     function getOriginNOR() public view
-    returns (uint time, uint date){
-        return (events[0].time, events[0].date);
+    returns (uint time){
+        return (events[0].time);
     }
 
-    function setOriginSail(uint _time, uint _date, uint _actualVolume) public {
+    function setOriginSail(uint _time, uint _actualVolume) public {
         Reference();
         Events storage aevent = events[1];
         // these references are writing to events[]
         aevent.time = _time;
-        aevent.date = _date;
         aevent.actualVolume = _actualVolume;
     }
 
     function getOriginSail() public view
-    returns (uint time, uint date, uint actualVolume){
-        return (events[1].time, events[1].date, events[1].actualVolume);
+    returns (uint time, uint actualVolume){
+        return (events[1].time, events[1].actualVolume);
     }
 
 
@@ -75,31 +71,29 @@ contract participant {
     ////////////////////////////////////////////////////////
 
 
-    function setDestinationNOR(uint _time, uint _date) public {
+    function setDestinationNOR(uint _time) public {
         Reference();
         Events storage aevent = events[2];
         // these references are writing to events[]
         aevent.time = _time;
-        aevent.date = _date;
     }
 
     function getDestinationNOR() public view
-    returns (uint time, uint date){
-        return (events[2].time, events[2].date);
+    returns (uint time){
+        return (events[2].time);
     }
 
-    function setDestinationSail(uint _time, uint _date, uint _actualVolume) public {
+    function setDestinationSail(uint _time, uint _actualVolume) public {
         Reference();
         Events storage aevent = events[3];
         // these references are writing to events[]
         aevent.time = _time;
-        aevent.date = _date;
         aevent.actualVolume = _actualVolume;
     }
 
     function getDestinationSail() public view
-    returns (uint time, uint date, uint actualVolume){
-        return (events[3].time, events[3].date, events[3].actualVolume);
+    returns (uint time, uint actualVolume){
+        return (events[3].time, events[3].actualVolume);
     }
 }
 
