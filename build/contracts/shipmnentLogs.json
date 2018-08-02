@@ -1,0 +1,97 @@
+{
+  "contractName": "shipmnentLogs",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820976cb08a9cc2ec6d51dc26727e27a61db8478923a3e1dbb91f99257966471b210029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820976cb08a9cc2ec6d51dc26727e27a61db8478923a3e1dbb91f99257966471b210029",
+  "sourceMap": "26:27:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:27:7;;;;;;;",
+  "deployedSourceMap": "26:27:7:-;;;;;",
+  "source": "pragma solidity ^0.4.23;\n\ncontract shipmnentLogs {\n\n}\n\n",
+  "sourcePath": "/home/arpit/ChainSkills/oilShipmentPOC/contracts/shipmentLogs.sol",
+  "ast": {
+    "absolutePath": "/home/arpit/ChainSkills/oilShipmentPOC/contracts/shipmentLogs.sol",
+    "exportedSymbols": {
+      "shipmnentLogs": [
+        327
+      ]
+    },
+    "id": 328,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 326,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:7"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 327,
+        "linearizedBaseContracts": [
+          327
+        ],
+        "name": "shipmnentLogs",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 328,
+        "src": "26:27:7"
+      }
+    ],
+    "src": "0:55:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/arpit/ChainSkills/oilShipmentPOC/contracts/shipmentLogs.sol",
+    "exportedSymbols": {
+      "shipmnentLogs": [
+        327
+      ]
+    },
+    "id": 328,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 326,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:7"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 327,
+        "linearizedBaseContracts": [
+          327
+        ],
+        "name": "shipmnentLogs",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 328,
+        "src": "26:27:7"
+      }
+    ],
+    "src": "0:55:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-02T09:11:44.868Z"
+}
