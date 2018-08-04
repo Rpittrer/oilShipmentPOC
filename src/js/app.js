@@ -34,7 +34,7 @@ App = {
             App.listenToEvents();
         });
     }
-}
+};
 $(() => {
     $(window).load(() => {
         App.init();

@@ -4,7 +4,7 @@ const fs = require('fs');
 const port = process.env.PORT || 3000;
 
 var app = express();
-hbs.registerPartials(__dirname + '/views/partials/');
+hbs.registerPartials(__dirname + '/views/partials');
 
 app.set('view engine', 'hbs');
 
@@ -26,14 +26,12 @@ app.get('/', (req, res) => {
     res.send('hello world');
 });
 
-app.use(express.static(__dirname + '/public'));
-
-app.get('/about', (req, res) => {
+app.get('/home', (req, res) => {
     var about = {
         name: 'arpit',
         likes: ['blender', 'node']
     };
-    res.render('about.hbs', {
+    res.render('index.hbs', {
         titleName: 'Good Morning'
     });
 });
