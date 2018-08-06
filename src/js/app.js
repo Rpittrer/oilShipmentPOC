@@ -20,18 +20,16 @@ App = {
             );
         }
         web3 = new Web3(App.web3Provider);
-
         return App.initContract();
     },
 
     initContract: () => {
-        $.getJSON('Shipper_Exporter.json', artifact => {
+        $.getJSON('vendor.json', artifact => {
             // get the contract artifact file and use it to instantiate a truffle contract abstraction
-            App.contracts.Shipper_Exporter = TruffleContract(artifact);
+            App.contracts.vendor = TruffleContract(artifact);
             // set the provider for our contracts
-            App.contracts.Shipper_Exporter.setProvider(App.web3Provider);
+            App.contracts.vendor.setProvider(App.web3Provider);
             // listen to events
-            App.listenToEvents();
         });
     }
 };
