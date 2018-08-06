@@ -44,7 +44,6 @@ app.get('/home', (req, res) => {
         DischargePort,
         Shipper
     });
-    res.status(200).send();
 });
 
 app.listen(port, () => {
