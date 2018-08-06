@@ -36,7 +36,15 @@
                             <td>12/02/1998</td>
                             <td>15:12</td>
                         </tr>
-                        {{#list}} {{{Vendor}}} {{/list}}
+                        {{#each Vendor}}
+                        <tr>
+                            <td scope="row">{{this.shipmentId}}</td>
+                            <td>{{this.description}}</td>
+                            <td>{{this.location}}</td>
+                            <td>{{this.date}}</td>
+                            <td>{{this.time}}</td>
+                        </tr>
+                        {{/each}}
                     </tbody>
                 </table>
             </div>
