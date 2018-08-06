@@ -3,23 +3,14 @@ const hbs = require('hbs');
 const fs = require('fs');
 const port = process.env.PORT || 3000;
 
-const Vendor = [
-    {
-        shipmentId: 123,
-        description: 'sddd',
-        location: 'O',
-        date: 564,
-        time: 789
-    },
-    {
-        shipmentId: 134,
-        description: 'gihdind',
-        location: 'D',
-        date: 899,
-        time: 786576
-    }
-];
-
+const {
+    Vendor,
+    Vessel,
+    Inspector,
+    LoadingPort,
+    DischargePort,
+    Shipper
+} = require('./src/js/objects');
 
 var app = express();
 hbs.registerPartials(__dirname + '/views/partials');
@@ -45,7 +36,15 @@ app.get('/', (req, res) => {
 });
 
 app.get('/home', (req, res) => {
-    res.render('index.hbs', {Vendor});
+    res.render('index.hbs', {
+        Vendor,
+        Vessel,
+        Inspector,
+        LoadingPort,
+        DischargePort,
+        Shipper
+    });
+    res.status(200).send();
 });
 
 app.listen(port, () => {
