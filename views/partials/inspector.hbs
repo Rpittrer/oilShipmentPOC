@@ -1,0 +1,56 @@
+<a type="button" data-toggle="modal" data-target="#inspectorModal">
+    <div class="card hvr-grow-shadow hvr-underline-from-center" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Inspector</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Event Logs</h6>
+            <p class="card-text">Confirming logs for Shipper</p>
+        </div>
+    </div>
+</a>
+<div class="modal fade bd-example-modal-lg" id="inspectorModal" tabindex="-1" role="dialog" aria-labelledby="inspectorModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="inspectorModalLabel">Vendor</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Shipment ID</th>
+                            <th scope="col">Event Description</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">Start Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>NOR tendered</td>
+                            <td>O</td>
+                            <td>12/02/1998</td>
+                            <td>15:12</td>
+                        </tr>
+                        {{#each Vendor}}
+                        <tr>
+                            <td scope="row">{{this.shipmentId}}</td>
+                            <td>{{this.description}}</td>
+                            <td>{{this.location}}</td>
+                            <td>{{this.date}}</td>
+                            <td>{{this.time}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

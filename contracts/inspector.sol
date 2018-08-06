@@ -1,10 +1,8 @@
 pragma solidity ^0.4.23;
 
-import "./eventLogs.sol";
+import "./participant.sol";
 
-contract inspector is eventLogs {
-
-
+contract inspector is participant {
 
 }
 
