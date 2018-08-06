@@ -43,7 +43,7 @@
 
 			<div class="jumbotron">
 				<h2 class="display-4">Shipment</h2>
-				
+
 				<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
 				<hr>
 				<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -52,9 +52,25 @@
 				</p>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
-					{{> modal}}
+				<div class="col-md-4 mb-3">
+					{{> vendor}}
 				</div>
+				<div class="col-md-4 mb-3">
+					{{> shipper}}
+				</div>
+				<div class="col-md-4 mb-3">
+					{{> vessel}}
+				</div>
+				<div class="col-md-4 mb-3">
+					{{> inspector}}
+				</div>
+				<div class="col-md-4 mb-3">
+					{{> loadingPort}}
+				</div>
+				<div class="col-md-4 mb-3">
+					{{> dischargePort}}
+				</div>
+
 			</div>
 		</main>
 

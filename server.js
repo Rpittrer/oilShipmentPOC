@@ -20,6 +20,7 @@ const Vendor = [
     }
 ];
 
+
 var app = express();
 hbs.registerPartials(__dirname + '/views/partials');
 
@@ -45,12 +46,6 @@ app.get('/', (req, res) => {
 
 app.get('/home', (req, res) => {
     res.render('index.hbs', {Vendor});
-});
-app.get('/bad', (req, res) => {
-    var error = {
-        errorMessage: 'Unable to handle request'
-    };
-    res.send(error);
 });
 
 app.listen(port, () => {
