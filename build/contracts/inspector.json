@@ -219,7 +219,7 @@
         "id": 65,
         "nodeType": "ImportDirective",
         "scope": 69,
-        "sourceUnit": 325,
+        "sourceUnit": 464,
         "src": "26:27:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -233,10 +233,10 @@
               "id": 66,
               "name": "participant",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 324,
+              "referencedDeclaration": 463,
               "src": "77:11:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_participant_$324",
+                "typeIdentifier": "t_contract$_participant_$463",
                 "typeString": "contract participant"
               }
             },
@@ -246,7 +246,7 @@
           }
         ],
         "contractDependencies": [
-          324
+          463
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -254,7 +254,7 @@
         "id": 68,
         "linearizedBaseContracts": [
           68,
-          324
+          463
         ],
         "name": "inspector",
         "nodeType": "ContractDefinition",
@@ -292,7 +292,7 @@
         "id": 65,
         "nodeType": "ImportDirective",
         "scope": 69,
-        "sourceUnit": 325,
+        "sourceUnit": 464,
         "src": "26:27:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -306,10 +306,10 @@
               "id": 66,
               "name": "participant",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 324,
+              "referencedDeclaration": 463,
               "src": "77:11:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_participant_$324",
+                "typeIdentifier": "t_contract$_participant_$463",
                 "typeString": "contract participant"
               }
             },
@@ -319,7 +319,7 @@
           }
         ],
         "contractDependencies": [
-          324
+          463
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -327,7 +327,7 @@
         "id": 68,
         "linearizedBaseContracts": [
           68,
-          324
+          463
         ],
         "name": "inspector",
         "nodeType": "ContractDefinition",
@@ -342,7 +342,14 @@
     "name": "solc",
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5778": {
+      "events": {},
+      "links": {},
+      "address": "0x64f3ba79975f0387d0dad2f72bcb2e31f7952c9f",
+      "transactionHash": "0xa282397d7761fc6b2758835bbf73f7b10780e86b24a7c4cf84e1f0940f2a296c"
+    }
+  },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-02T09:11:44.866Z"
+  "updatedAt": "2018-08-07T08:20:32.133Z"
 }
