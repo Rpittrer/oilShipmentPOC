@@ -1,59 +1,58 @@
-<a type="button" data-toggle="modal" data-target="#shipmentModal">
-    <div class="card hvr-grow-shadow hvr-underline-from-center" style="width: 18rem;">
-        <div class="card-body inside card-color">
-            <h5 class="btn btn-primary" href="#" type="button" data-toggle="modal" data-target="#shipmentModal">Add Shipment</h5> 
-        </div>
-    </div>
-</a>
-<div class="modal fade bd-example-modal-lg modal-color" id="shipmentModal" tabindex="-1" role="dialog" aria-labelledby="shipmentModalLabel"
+<div class="modal fade bd-example-modal-lg modal-color" id="form" tabindex="-1" role="dialog" aria-labelledby="formLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg inside" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="shipmentModal">Add Shipment</h5>
+                <h5 class="modal-title" id="formLabel">Add Shipment</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-<form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Shipment ID</label>
-    <input type="id" class="form-control" id="exampleFormControlInput1">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Location</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>Origin</option>
-      <option>Destination</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Event Description</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>NOR Tendered</option>
-      <option>Vessel Sailed</option>
-    </select>
-  </div>
-    <div class="col">
-            <label for="exampleFormControlInput1">NOR Date</label>
-            <input data-date-format="dd/mm/yyyy" id="datepicker">
-    </div>
-    <div class="form-group">
-    <label for="exampleFormControlInput1">NOR Time</label>
-    <input type="time" class="form-control" id="exampleFormControlInput1">
-  </div>
-  <div class="col">
-            <label for="exampleFormControlInput1">Vessel Sail Date</label>
-            <input data-date-format="dd/mm/yyyy" id="datepicker">
-    </div>
-    <div class="form-group">
-            <label for="exampleFormControlInput1">Vessel Sail Time</label>
-            <input type="time" class="form-control" id="exampleFormControlInput1">
-  </div>
+            <form class="p-5 bg-info">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Shipment ID</label>
+                    <input type="id" class="form-control" id="exampleFormControlInput1" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Location</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Origin</option>
+                        <option>Destination</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Event Description</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>NOR Tendered</option>
+                        <option>Vessel Sailed</option>
+                    </select>
+                </div>
+                <h5 class="modal-title" id="formLabel">NOR</h5>
+                <div class="col">
+                    <label for="exampleFormControlInput1">Date</label>
+                    <input data-date-format="dd/mm/yyyy" name="MyDate1" class="datepicker">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Time</label>
+                    <input type="time" class="form-control" id="exampleFormControlInput1">
+                </div>
+                 <h5 class="modal-title" id="formLabel">Vessel Sailed</h5>
+                <div class="col">
+                    <label for="exampleFormControlInput1">Date</label>
+                    <input data-date-format="dd/mm/yyyy" name="MyDate2" class="datepicker">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Time</label>
+                    <input type="time" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Volume Recorded</label>
+                    <input type="id" class="form-control" id="exampleFormControlInput1" placeholder="100 barrels" >
+                </div>
 
-</form>
+            </form>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
             </div>
         </div>
     </div>

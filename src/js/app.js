@@ -24,17 +24,38 @@ App = {
     },
 
     initContract: () => {
-        $.getJSON('vendor.json', artifact => {
-            // get the contract artifact file and use it to instantiate a truffle contract abstraction
-            App.contracts.vendor = TruffleContract(artifact);
-            // set the provider for our contracts
-            App.contracts.vendor.setProvider(App.web3Provider);
-            // listen to events
-        });
+        $.when(
+            $.getJSON('vendor.json'),
+            $.getJSON('vessel.json'),
+            $.getJSON('shipper.json'),
+            $.getJSON('inspector.json'),
+            $.getJSON('loadingPort.json'),
+            $.getJSON('dischargePort.json')
+        ).done(
+            (_vendor, _vessel, _shipper, _inspector, _loading, _discharge) => {
+                // get the contract artifact file and use it to instantiate a truffle contract abstraction
+                // set the provider for our contracts
+                App.contracts.vendor = TruffleContract(_vendor);
+                App.contracts.vendor.setProvider(App.web3Provider);
+
+                App.contracts.vessel = TruffleContract(_vessel);
+                App.contracts.vessel.setProvider(App.web3Provider);
+
+                App.contracts.shipper = TruffleContract(_shipper);
+                App.contracts.shipper.setProvider(App.web3Provider);
+
+                App.contracts.inspector = TruffleContract(_inspector);
+                App.contracts.inspector.setProvider(App.web3Provider);
+
+                App.contracts.loadingPort = TruffleContract(_loading);
+                App.contracts.loadingPort.setProvider(App.web3Provider);
+
+                App.contracts.dischargePort = TruffleContract(_discharge);
+                App.contracts.dischargePort.setProvider(App.web3Provider);
+            }
+        );
     }
 };
-$(() => {
-    $(window).load(() => {
-        App.init();
-    });
+$(document).ready(() => {
+    App.init();
 });
