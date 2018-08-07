@@ -25,12 +25,12 @@ App = {
 
     initContract: () => {
         $.when(
-            $.getJSON('vendor.json'),
-            $.getJSON('vessel.json'),
-            $.getJSON('shipper.json'),
-            $.getJSON('inspector.json'),
-            $.getJSON('loadingPort.json'),
-            $.getJSON('dischargePort.json')
+            $.getJSON('../../build/contracts/vendor.json'),
+            $.getJSON('../../build/contracts/vessel.json'),
+            $.getJSON('../../build/contracts/shipper.json'),
+            $.getJSON('../../build/contracts/inspector.json'),
+            $.getJSON('../../build/contracts/loadingPort.json'),
+            $.getJSON('../../build/contracts/dischargePort.json')
         ).done(
             (_vendor, _vessel, _shipper, _inspector, _loading, _discharge) => {
                 // get the contract artifact file and use it to instantiate a truffle contract abstraction
@@ -58,4 +58,5 @@ App = {
 };
 $(document).ready(() => {
     App.init();
+    
 });
