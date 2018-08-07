@@ -63,18 +63,18 @@
 			}
 		</style>
 
-		<title>Hello, world!</title>
+		<title>Vrvot</title>
 	</head>
 
 	<body>
 		<main role="main" class="container shadow-lg">
 			<div class="jumbotron grad inside">
-				<h2 class="display-4">Shipment</h2>
-				<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+				<h2 class="display-4">Supply Chain Management</h2>
+				<p class="lead">Complete Blockchain solution for Marine Logisics.</p>
 				<hr>
 				<p></p>
 				<p class="lead">
-					<a class="btn btn-lg" href="#" role="button">Learn more</a>
+					<button class="btn btn-primary" href="#" type="button"data-toggle="modal" data-target="shipmentModal">Add Shipment</button>
 				</p>
 			</div>
 
@@ -112,6 +112,18 @@
 		 crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		 crossorigin="anonymous"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+    		$('#datepicker').datepicker({
+        		weekStart: 1,
+        		daysOfWeekHighlighted: "6,0",
+        		autoclose: true,
+        		todayHighlight: true,
+   			 });
+    		$('#datepicker').datepicker("setDate", new Date());
+		</script>
 	</body>
 
 </html>
