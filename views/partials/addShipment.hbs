@@ -10,29 +10,29 @@
             </div>
             <form class="p-5 bg-info" method="post" id="myForm" name="form_name" >
                 <div class="form-group">
-                    <input type="id" class="form-control" name="shipmentId" id="exampleFormControlInput1" placeholder="Shipment Id">
+                    <input type="id" class="form-control" name="shipmentId" id="exampleFormControlInput1" placeholder="Shipment Id" required>
                 </div>
                 <div class="form-group">
-                    <select class="form-control" name="location" id="exampleFormControlSelect1" aria-placeholder="Location">
+                    <select class="form-control" name="location" id="exampleFormControlSelect1" aria-placeholder="Location" required>
                         <option>Origin</option>
                         <option>Destination</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <select class="form-control" name="description" id="exampleFormControlSelect1" aria-placeholder="Description">
+                    <select class="form-control" name="description" id="exampleFormControlSelect1" aria-placeholder="Description" required>
                         <option>NOR Tendered</option>
                         <option>Vessel Sailed</option>
                     </select>
                 </div>
                 <div class="form-row">
                     <div class="col">
-                        <input data-date-format="dd/mm/yyyy" name="date" id="datepicker" placeholder="Date">
+                        <input data-date-format="dd/mm/yyyy" name="date" id="datepicker" placeholder="Date" required>
                     </div>
                     <div class="col">
-                        <input type="time" class="form-control" name="time" id="time" placeholder="Time">
+                        <input type="time" class="form-control" name="time" id="time" placeholder="Time" required>
                     </div>
                     <div class="col">
-                        <input type="id" class="form-control" name="volumerecorded" id="volume" placeholder="Volume">
+                        <input type="id" class="form-control" name="volumerecorded" id="volume" placeholder="Volume" required>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>

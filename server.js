@@ -54,14 +54,7 @@ app.get('/home', (req, res) => {
 
 app.post('/home',(req, res) =>{
     Vendor.push(req.body);
-    res.render('index.hbs', {
-        Vendor,
-        Vessel,
-        Inspector,
-        LoadingPort,
-        DischargePort,
-        Shipper
-    });
+    res.redirect('/home');
 });
 
 app.listen(port, () => {
