@@ -1,6 +1,6 @@
-const express = require('express');
 const hbs = require('hbs');
-const fs = require('fs');
+const fs = require('fs');const express = require('express');
+
 const port = process.env.PORT || 3000;
 
 const {
@@ -13,6 +13,8 @@ const {
 } = require('./src/js/objects');
 
 var app = express();
+app.use(express.static(__dirname + '/'));
+
 hbs.registerPartials(__dirname + '/views/partials');
 
 app.set('view engine', 'hbs');
