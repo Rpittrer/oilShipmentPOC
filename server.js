@@ -1,5 +1,7 @@
 const hbs = require('hbs');
-const fs = require('fs');const express = require('express');
+const fs = require('fs');
+const express = require('express');
+const bodyParser = require('body-parser');
 
 const port = process.env.PORT || 3000;
 
@@ -14,6 +16,8 @@ const {
 
 var app = express();
 app.use(express.static(__dirname + '/'));
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 hbs.registerPartials(__dirname + '/views/partials');
 
@@ -38,6 +42,19 @@ app.get('/', (req, res) => {
 });
 
 app.get('/home', (req, res) => {
+    res.render('index.hbs', {
+        Vendor,
+        Vessel,
+        Inspector,
+        LoadingPort,
+        DischargePort,
+        Shipper
+    });
+});
+
+app.post('/home',(req, res) =>{
+    let Vendor= req.body;
+    console.log(req.body);
     res.render('index.hbs', {
         Vendor,
         Vessel,

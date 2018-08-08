@@ -126,7 +126,6 @@ Mon Aug 06 2018 20:55:02 GMT+0530 (India Standard Time): GET /home
 Mon Aug 06 2018 20:55:02 GMT+0530 (India Standard Time): GET /css/hover.css
 Mon Aug 06 2018 20:56:37 GMT+0530 (India Standard Time): GET /
 Mon Aug 06 2018 20:56:37 GMT+0530 (India Standard Time): GET /home
-
 Mon Aug 06 2018 23:50:02 GMT+0530 (India Standard Time): GET /
 Mon Aug 06 2018 23:50:02 GMT+0530 (India Standard Time): GET /home
 Mon Aug 06 2018 23:50:02 GMT+0530 (India Standard Time): GET /css/hover.css
@@ -806,7 +805,6 @@ Tue Aug 07 2018 18:28:49 GMT+0530 (India Standard Time): GET /home
 Tue Aug 07 2018 18:28:49 GMT+0530 (India Standard Time): GET /src/css/hover.css
 Tue Aug 07 2018 18:29:39 GMT+0530 (India Standard Time): GET /home
 Tue Aug 07 2018 18:29:39 GMT+0530 (India Standard Time): GET /src/css/hover.css
-<<<<<<< HEAD
 Tue Aug 07 2018 18:32:47 GMT+0530 (India Standard Time): GET /home
 Tue Aug 07 2018 18:32:47 GMT+0530 (India Standard Time): GET /src/css/hover.css
 Wed Aug 08 2018 11:05:12 GMT+0530 (India Standard Time): GET /home
@@ -815,7 +813,6 @@ Wed Aug 08 2018 11:08:10 GMT+0530 (India Standard Time): GET /home
 Wed Aug 08 2018 11:08:10 GMT+0530 (India Standard Time): GET /src/css/hover.css
 Wed Aug 08 2018 11:10:13 GMT+0530 (India Standard Time): GET /home
 Wed Aug 08 2018 11:10:13 GMT+0530 (India Standard Time): GET /src/css/hover.css
-=======
 Tue Aug 07 2018 20:44:39 GMT+0530 (India Standard Time): GET /
 Tue Aug 07 2018 20:44:39 GMT+0530 (India Standard Time): GET /home
 Tue Aug 07 2018 20:44:39 GMT+0530 (India Standard Time): GET /src/js/web3.min.js
@@ -867,7 +864,9 @@ Tue Aug 07 2018 21:28:35 GMT+0530 (India Standard Time): GET /home
 Tue Aug 07 2018 21:31:11 GMT+0530 (India Standard Time): GET /home
 Tue Aug 07 2018 21:35:07 GMT+0530 (India Standard Time): GET /home
 Tue Aug 07 2018 21:57:14 GMT+0530 (India Standard Time): GET /home
->>>>>>> 17d10fb70f2eff743b8ff4996e9d378ad00f3c00
+Wed Aug 08 2018 11:28:57 GMT+0530 (India Standard Time): GET /
+Wed Aug 08 2018 11:28:57 GMT+0530 (India Standard Time): GET /home
+Wed Aug 08 2018 11:29:02 GMT+0530 (India Standard Time): GET /favicon.ico
 Wed Aug 08 2018 11:22:34 GMT+0530 (India Standard Time): GET /home
 Wed Aug 08 2018 11:23:55 GMT+0530 (India Standard Time): GET /home
 Wed Aug 08 2018 11:26:26 GMT+0530 (India Standard Time): GET /home
@@ -880,3 +879,21 @@ Wed Aug 08 2018 12:06:22 GMT+0530 (India Standard Time): GET /home
 Wed Aug 08 2018 12:08:03 GMT+0530 (India Standard Time): GET /home
 Wed Aug 08 2018 12:28:08 GMT+0530 (India Standard Time): GET /home
 Wed Aug 08 2018 12:44:23 GMT+0530 (India Standard Time): GET /home
+Wed Aug 08 2018 11:40:52 GMT+0530 (India Standard Time): GET /homeWed Aug 08 2018 11:43:15 GMT+0530 (India Standard Time): GET /home
+Wed Aug 08 2018 11:43:46 GMT+0530 (India Standard Time): GET /home
+Wed Aug 08 2018 11:45:53 GMT+0530 (India Standard Time): GET /home
+Wed Aug 08 2018 11:47:53 GMT+0530 (India Standard Time): GET /home
+Wed Aug 08 2018 12:29:37 GMT+0530 (India Standard Time): GET /home
+Wed Aug 08 2018 12:29:37 GMT+0530 (India Standard Time): POST /home
+Wed Aug 08 2018 12:31:37 GMT+0530 (India Standard Time): POST /home
+Wed Aug 08 2018 12:36:46 GMT+0530 (India Standard Time): POST /home
+Wed Aug 08 2018 12:41:33 GMT+0530 (India Standard Time): POST /home
+Wed Aug 08 2018 12:42:55 GMT+0530 (India Standard Time): GET /home
+Wed Aug 08 2018 12:46:51 GMT+0530 (India Standard Time): GET /home
+Wed Aug 08 2018 12:48:13 GMT+0530 (India Standard Time): GET /home
+Wed Aug 08 2018 12:48:41 GMT+0530 (India Standard Time): POST /home
+Wed Aug 08 2018 12:50:27 GMT+0530 (India Standard Time): POST /home
+Wed Aug 08 2018 12:50:53 GMT+0530 (India Standard Time): POST /home
+Wed Aug 08 2018 12:51:05 GMT+0530 (India Standard Time): POST /home
+Wed Aug 08 2018 12:53:42 GMT+0530 (India Standard Time): POST /home
+Wed Aug 08 2018 12:54:05 GMT+0530 (India Standard Time): POST /home
