@@ -53,10 +53,10 @@ app.get('/home', (req, res) => {
 });
 
 app.post('/home',(req, res) =>{
-    var x= req.body;
+    let Vendor= req.body;
     console.log(req.body);
     res.render('index.hbs', {
-        x,
+        Vendor,
         Vessel,
         Inspector,
         LoadingPort,
