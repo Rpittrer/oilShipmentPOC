@@ -48,6 +48,11 @@ app.get('/home', (req, res) => {
     });
 });
 
+app.post('/home', function(req, res){
+    console.log(req.body);
+    res.send("recieved your request!");
+ });
+
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
 });
