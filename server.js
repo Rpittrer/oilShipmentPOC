@@ -53,8 +53,7 @@ app.get('/home', (req, res) => {
 });
 
 app.post('/home',(req, res) =>{
-    let Vendor= req.body;
-    console.log(req.body);
+    Vendor.push(req.body);
     res.render('index.hbs', {
         Vendor,
         Vessel,

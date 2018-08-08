@@ -30,14 +30,6 @@ const Vendor = [
         date: "15/11/17",
         time: 0908,
         volumerecorded : 2500
-    },
-    {
-        shipmentId: 845,
-        description: 'Vessel Sailed',
-        location: 'Origin',
-        date: "04/07/18",
-        time: 1100,
-        volumerecorded : 1200
     }
 ];
 const Vessel = [
@@ -72,14 +64,6 @@ const Vessel = [
         date: "15/11/17",
         time: 0908,
         volumerecorded : 2500
-    },
-    {
-        shipmentId: 845,
-        description: 'Vessel Sailed',
-        location: 'Origin',
-        date: "04/07/18",
-        time: 1100,
-        volumerecorded : 1200
     }
 ];
 const Inspector = [
@@ -114,14 +98,6 @@ const Inspector = [
         date: "12/12/17",
         time: 0236,
         volumerecorded : 3100
-    },
-    {
-        shipmentId: 845,
-        description: 'Vessel Sailed',
-        location: 'Origin',
-        date: "04/07/18",
-        time: 1100,
-        volumerecorded : 1200
     }
 ];
 const LoadingPort = [
@@ -156,14 +132,6 @@ const LoadingPort = [
         date: "15/11/17",
         time: 0908,
         volumerecorded : 2500
-    },
-    {
-        shipmentId: 845,
-        description: 'Vessel Sailed',
-        location: 'Origin',
-        date: "04/07/18",
-        time: 1100,
-        volumerecorded : 1200
     }
 ];
 const DischargePort = [
