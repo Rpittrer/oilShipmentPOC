@@ -12,7 +12,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="inspectorModalLabel">Vendor</h5>
+                <h5 class="modal-title" id="inspectorModalLabel">Inspectorr</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -26,23 +26,26 @@
                             <th scope="col">Location</th>
                             <th scope="col">Start Date</th>
                             <th scope="col">Start Time</th>
+                            <th scope="col">Volume Recorded</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
                             <td>NOR tendered</td>
-                            <td>O</td>
+                            <td>Origin</td>
                             <td>12/02/1998</td>
                             <td>15:12</td>
+                            <td>100</td>
                         </tr>
-                        {{#each Inspector}}
+                        {{#each DischargePort}}
                         <tr>
                             <td scope="row">{{this.shipmentId}}</td>
                             <td>{{this.description}}</td>
                             <td>{{this.location}}</td>
                             <td>{{this.date}}</td>
                             <td>{{this.time}}</td>
+                            <td>{{this.volumerecorded}}</td>
                         </tr>
                         {{/each}}
                     </tbody>

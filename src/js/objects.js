@@ -1,31 +1,43 @@
 const Vendor = [
     {
-        shipmentId: 123,
+        shipmentId: 234,
         description: 'NOR Tendered',
         location: 'Origin',
-        date: "07/07/16",
-        time: 2116
+        date: "12/12/17",
+        time: 0236,
+        volumerecorded : 3100
     },
     {
-        shipmentId: 134,
+        shipmentId: 6434,
         description: 'NOR Tendered',
         location: 'Destination',
-        date: "03/08/16",
-        time: 1123
+        date: "21/04/17",
+        time: 1309,
+        volumerecorded : 1400
     },
     {
-        shipmentId: 145,
+        shipmentId: 4325,
         description: 'Vessel Sailed',
         location: 'Destination',
-        date: "05/08/16",
-        time: 1200
+        date: "30/03/18",
+        time: 1703,
+        volumerecorded : 5200
+    },
+    {
+        shipmentId: 7890,
+        description: 'Vessel Sailed',
+        location: 'Origin',
+        date: "15/11/17",
+        time: 0908,
+        volumerecorded : 2500
     },
     {
         shipmentId: 845,
         description: 'Vessel Sailed',
         location: 'Origin',
         date: "04/07/18",
-        time: 0100
+        time: 1100,
+        volumerecorded : 1200
     }
 ];
 const Vessel = [
@@ -34,34 +46,210 @@ const Vessel = [
         description: 'NOR Tendered',
         location: 'Origin',
         date: "12/12/17",
-        time: 0236
+        time: 0236,
+        volumerecorded : 3100
     },
     {
         shipmentId: 6434,
         description: 'NOR Tendered',
         location: 'Destination',
         date: "21/04/17",
-        time: 1309
+        time: 1309,
+        volumerecorded : 1400
     },
     {
         shipmentId: 4325,
         description: 'Vessel Sailed',
         location: 'Destination',
         date: "30/03/18",
-        time: 1703
+        time: 1703,
+        volumerecorded : 5200
     },
     {
         shipmentId: 7890,
         description: 'Vessel Sailed',
         location: 'Origin',
         date: "15/11/17",
-        time: 0908
+        time: 0908,
+        volumerecorded : 2500
+    },
+    {
+        shipmentId: 845,
+        description: 'Vessel Sailed',
+        location: 'Origin',
+        date: "04/07/18",
+        time: 1100,
+        volumerecorded : 1200
     }
 ];
-const Inspector = [];
-const LoadingPort = [];
-const DischargePort = [];
-const Shipper = [];
+const Inspector = [
+    {
+        shipmentId: 7890,
+        description: 'Vessel Sailed',
+        location: 'Origin',
+        date: "15/11/17",
+        time: 0908,
+        volumerecorded : 2500
+    },
+    {
+        shipmentId: 4325,
+        description: 'Vessel Sailed',
+        location: 'Destination',
+        date: "30/03/18",
+        time: 1703,
+        volumerecorded : 5200 
+    },
+    {
+        shipmentId: 6434,
+        description: 'NOR Tendered',
+        location: 'Destination',
+        date: "21/04/17",
+        time: 1309,
+        volumerecorded : 1400
+    },
+    {
+        shipmentId: 234,
+        description: 'NOR Tendered',
+        location: 'Origin',
+        date: "12/12/17",
+        time: 0236,
+        volumerecorded : 3100
+    },
+    {
+        shipmentId: 845,
+        description: 'Vessel Sailed',
+        location: 'Origin',
+        date: "04/07/18",
+        time: 1100,
+        volumerecorded : 1200
+    }
+];
+const LoadingPort = [
+    {
+        shipmentId: 234,
+        description: 'NOR Tendered',
+        location: 'Origin',
+        date: "12/12/17",
+        time: 0236,
+        volumerecorded : 3100
+    },
+    {
+        shipmentId: 6434,
+        description: 'NOR Tendered',
+        location: 'Destination',
+        date: "21/04/17",
+        time: 1309,
+        volumerecorded : 1400
+    },
+    {
+        shipmentId: 4325,
+        description: 'Vessel Sailed',
+        location: 'Destination',
+        date: "30/03/18",
+        time: 1703,
+        volumerecorded : 5200
+    },
+    {
+        shipmentId: 7890,
+        description: 'Vessel Sailed',
+        location: 'Origin',
+        date: "15/11/17",
+        time: 0908,
+        volumerecorded : 2500
+    },
+    {
+        shipmentId: 845,
+        description: 'Vessel Sailed',
+        location: 'Origin',
+        date: "04/07/18",
+        time: 1100,
+        volumerecorded : 1200
+    }
+];
+const DischargePort = [
+    {
+        shipmentId: 234,
+        description: 'NOR Tendered',
+        location: 'Origin',
+        date: "12/12/17",
+        time: 0236,
+        volumerecorded : 3100
+    },
+    {
+        shipmentId: 6434,
+        description: 'NOR Tendered',
+        location: 'Destination',
+        date: "21/04/17",
+        time: 1309,
+        volumerecorded : 1400
+    },
+    {
+        shipmentId: 4325,
+        description: 'Vessel Sailed',
+        location: 'Destination',
+        date: "30/03/18",
+        time: 1703,
+        volumerecorded : 5200
+    },
+    {
+        shipmentId: 7890,
+        description: 'Vessel Sailed',
+        location: 'Origin',
+        date: "15/11/17",
+        time: 0908,
+        volumerecorded : 2500
+    },
+    {
+        shipmentId: 845,
+        description: 'Vessel Sailed',
+        location: 'Origin',
+        date: "04/07/18",
+        time: 1100,
+        volumerecorded : 1200
+    }
+];
+const Shipper = [
+    {
+        shipmentId: 234,
+        description: 'NOR Tendered',
+        location: 'Origin',
+        date: "12/12/17",
+        time: 0236,
+        volumerecorded : 3100
+    },
+    {
+        shipmentId: 6434,
+        description: 'NOR Tendered',
+        location: 'Destination',
+        date: "21/04/17",
+        time: 1309,
+        volumerecorded : 1400
+    },
+    {
+        shipmentId: 4325,
+        description: 'Vessel Sailed',
+        location: 'Destination',
+        date: "30/03/18",
+        time: 1703,
+        volumerecorded : 5200
+    },
+    {
+        shipmentId: 7890,
+        description: 'Vessel Sailed',
+        location: 'Origin',
+        date: "15/11/17",
+        time: 0908,
+        volumerecorded : 2500
+    },
+    {
+        shipmentId: 845,
+        description: 'Vessel Sailed',
+        location: 'Origin',
+        date: "04/07/18",
+        time: 1100,
+        volumerecorded : 1200
+    }
+];
 
 module.exports = {
     Vendor,
