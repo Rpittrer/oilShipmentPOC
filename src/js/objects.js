@@ -36,7 +36,7 @@ const Vendor = [
         description: 'Vessel Sailed',
         location: 'Origin',
         date: "04/07/18",
-        time: 0100,
+        time: 1100,
         volumerecorded : 1200
     }
 ];
@@ -78,7 +78,7 @@ const Vessel = [
         description: 'Vessel Sailed',
         location: 'Origin',
         date: "04/07/18",
-        time: 0100,
+        time: 1100,
         volumerecorded : 1200
     }
 ];
@@ -120,7 +120,7 @@ const Inspector = [
         description: 'Vessel Sailed',
         location: 'Origin',
         date: "04/07/18",
-        time: 0100,
+        time: 1100,
         volumerecorded : 1200
     }
 ];
@@ -162,7 +162,7 @@ const LoadingPort = [
         description: 'Vessel Sailed',
         location: 'Origin',
         date: "04/07/18",
-        time: 0100,
+        time: 1100,
         volumerecorded : 1200
     }
 ];
@@ -204,7 +204,7 @@ const DischargePort = [
         description: 'Vessel Sailed',
         location: 'Origin',
         date: "04/07/18",
-        time: 0100,
+        time: 1100,
         volumerecorded : 1200
     }
 ];
@@ -246,7 +246,7 @@ const Shipper = [
         description: 'Vessel Sailed',
         location: 'Origin',
         date: "04/07/18",
-        time: 0100,
+        time: 1100,
         volumerecorded : 1200
     }
 ];
