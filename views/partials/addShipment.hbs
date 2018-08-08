@@ -8,51 +8,35 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form class="p-5 bg-info">
+            <form class="p-5 bg-info" method="post" id="myForm" name="form_name" >
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Shipment ID</label>
-                    <input type="id" class="form-control" id="exampleFormControlInput1">
+                    <input type="id" class="form-control" name="shipmentId" id="exampleFormControlInput1" placeholder="Shipment Id">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Location</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" name="location" id="exampleFormControlSelect1" aria-placeholder="Location">
                         <option>Origin</option>
                         <option>Destination</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Event Description</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" name="description" id="exampleFormControlSelect1" aria-placeholder="Description">
                         <option>NOR Tendered</option>
                         <option>Vessel Sailed</option>
                     </select>
                 </div>
-                <h5 class="modal-title" id="formLabel">NOR</h5>
-                <div class="col">
-                    <label for="exampleFormControlInput1">Date</label>
-                    <input data-date-format="dd/mm/yyyy" name="MyDate1" class="datepicker">
+                <div class="form-row">
+                    <div class="col">
+                        <input data-date-format="dd/mm/yyyy" name="date" id="datepicker" placeholder="Date">
+                    </div>
+                    <div class="col">
+                        <input type="time" class="form-control" name="time" id="time" placeholder="Time">
+                    </div>
+                    <div class="col">
+                        <input type="id" class="form-control" name="volume" id="volume" placeholder="Volume">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Time</label>
-                    <input type="time" class="form-control" id="exampleFormControlInput1">
-                </div>
-                <h5 class="modal-title" id="formLabel">Vessel Sailed</h5>
-                <div class="col">
-                    <label for="exampleFormControlInput1">Date</label>
-                    <input data-date-format="dd/mm/yyyy" name="MyDate2" class="datepicker">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Time</label>
-                    <input type="time" class="form-control" id="exampleFormControlInput1">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Volume Recorded</label>
-                    <input type="id" class="form-control" id="exampleFormControlInput1" placeholder="100 barrels">
-                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
-            </div>
         </div>
     </div>
 </div>
