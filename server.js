@@ -38,10 +38,10 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.redirect('/home');
+  res.redirect('/index');
 });
 
-app.get('/home', (req, res) => {
+app.get('/index', (req, res) => {
   res.render('index.hbs', {
     Vendor,
     Vessel,
@@ -52,9 +52,9 @@ app.get('/home', (req, res) => {
   });
 });
 
-app.post('/home', (req, res) => {
+app.post('/index', (req, res) => {
   Vendor.push(req.body);
-  res.redirect('/home');
+  res.redirect('/index');
 });
 
 app.listen(port, () => {
