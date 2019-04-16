@@ -42,15 +42,15 @@ Laytime calculation is usually carried out in following steps:
 * Ethereum
 
 Run the development console.
-    ```javascript
-    truffle develop
-    ```
+```
+truffle develop
+```
 
 Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
-    ```javascript
-    compile
-    migrate
-    ```
+```
+compile
+migrate
+```
 
 Run the server with
 ```
