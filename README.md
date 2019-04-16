@@ -32,7 +32,7 @@ Laytime calculation is usually carried out in following steps:
 * Establish time of expiry of laytime.
 * Calculate despatch or demurrage payable.
 
-##Installation
+## Installation
 
 ### Prerequisites
 
@@ -41,17 +41,12 @@ Laytime calculation is usually carried out in following steps:
 * Ganache
 * Ethereum
 
-1. Install Truffle globally.
-    ```javascript
-    npm install -g truffle
-    ```
-
-2. Run the development console.
+Run the development console.
     ```javascript
     truffle develop
     ```
 
-3. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
+Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
     ```javascript
     compile
     migrate
@@ -61,5 +56,5 @@ Run the server with
 ```
 node server.js
 ```
-
+See the instance on localhost:3000
 
